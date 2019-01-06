@@ -347,5 +347,6 @@ Vector]]..n..[[.ONE  = new(]]..(("1, "):rep(n):sub(1, -3))..[[)
 , "Vector"..n..".W = new("..first(n, "0", ", 0", ", 0", ", 1")..")\n")..[[
 
 return Vector]]..n..[[
+
 ]]
 end
