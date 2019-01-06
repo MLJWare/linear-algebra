@@ -1,18 +1,3 @@
-local function create (code)
-  return load(code, nil, "t", nil)()
-end
-
-local function build_arg_list(prefix, count, postfix, extra_args)
-  local builder = {}
-  for i = 1, count do
-    table.insert(builder, ("%s%d%s"):format(prefix or "", i, postfix or ""))
-  end
-  if extra_args then
-    table.insert(builder, extra_args)
-  end
-  return table.concat(builder, ", ")
-end
-
 local function build_repeat_list(str, n)
   return (str..", "):rep(n):sub(1, -3)
 end
